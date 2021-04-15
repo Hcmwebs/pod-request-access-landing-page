@@ -71,8 +71,9 @@ body{
 }
 
 .container .left{
-  width: 90%;
+  width: 100%;
   height: 100%;
+  padding: 0 2.4rem;
   background-color: salmon;
   display: flex;
   flex-direction:column;
@@ -94,9 +95,9 @@ header{
 main{
   width:100%;
   max-width: 723px;
-  padding: 2rem;
+  padding: 2.4rem;
   background-color: rgba(0, 0, 0, 0.6);
-  position: relative;
+  position: absolute;
   top:50%;
   left: 50%;
   transform:translate(-50%,-50%);
@@ -124,7 +125,7 @@ main .header h2{
 }
 
 main .body{
-  margin-bottom:3.5rem;
+  margin-bottom:3rem;
 }
 main .body p{
   font-size: 1.5rem;
@@ -135,14 +136,15 @@ main .body p{
 
 .icons{
   padding: 2rem 0;
+  margin-bottom: 3rem;
   display:flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+
 }
 
 .icons .icon{
-  height: 15px;
+  height: 1.5rem;
   margin: 0 0.5rem;
 }
 
@@ -150,6 +152,30 @@ main .body p{
   height: 100%;
   object-fit: cover;
 }
+
+.form{
+  width: 427px;
+  max-width:100%;
+  padding: 1.5rem 2.4rem;
+  background-color: #fff;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.formGroup{
+  margin-bottom:2rem ;
+  padding-bottom: 2rem ;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /*=== tablets ===*/
 @media (min-width: 768px){
 
@@ -170,16 +196,20 @@ main .body p{
     background-size:auto;
     z-index: 9;
     top: 0;
-    left: 10%;
+    left: 20%;
     transform:translate(-50%,50%)
   }
 
   header{
-    left:calc(0% + 10%);
+    left:20%;
   }
 
   main{
+    max-width: 100%;
+    width: 635px;
     align-items: start;
+
+
   }
 
   main .header h1,h2{
@@ -189,11 +219,25 @@ main .body p{
   }
 
   main .body p{
+    width: 480px;
+    max-width: 100%;
     text-align: left;
     font-size: 1.8rem;
     line-height: 2.8rem;
 
   }
+
+  .icons{
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+  }
+
+  .icons .icon{
+    height:2.9rem ;
+  }
+
+
 }
 
 /*=== Desktops ===*/
