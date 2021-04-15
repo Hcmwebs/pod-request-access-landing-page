@@ -175,6 +175,14 @@ main .body p{
   justify-content: center;
 }
 
+.formGroup input{
+  width: 100%;
+  display: block;
+  font-size: 1.4rem;
+  text-align: left;
+  padding: 0.8rem 1.6rem ;
+}
+
 
 /*=== tablets ===*/
 @media (min-width: 768px){
