@@ -15,6 +15,7 @@ const setError = (message) => {
 }
 
 const setSuccess = () => {
+	formGroup.className = 'formGroup';
 	email.value = '';
 }
 
