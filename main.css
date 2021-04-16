@@ -42,7 +42,7 @@ body{
 .container{
   width: 100%;
   max-width: 1440px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +78,6 @@ body{
   justify-content: space-between;
   align-items: center;
   position:relative;
-  /* background-color: var(--bgColor); */
 
 }
 
@@ -220,40 +219,43 @@ main .body p{
   }
 
   .container .right{
-
-    height: 60vh;
-    /* background: url(./assets/tablet/image-host.jpg)no-repeat top right;
-    background-size: cover; */
-    /* left: 0%;
-    transform:translate(60%,-50%); */
-    background:none;
-    background-color: #fff;
-    /* transform:translateY(-50%) */
-
+    width: 60%;
+    background: url(./assets/tablet/image-host.jpg)no-repeat right center;
+    background-size: contain;
+    top: 35%;
+    left: 70%;
   }
 
 
   .container .right::after{
-    height: 20vh;
+    height: 10vh;
     background:url(./assets/desktop/bg-pattern-dots.svg) bottom left no-repeat;
-    background-size:auto;
-    z-index: 9;
+    background-size:contain;
+    left: -60%;
     top:100%;
-    left: 0;
-    transform:translate(-50%,-30%);
+    transform:translate(0, 40%);
+
+  }
+  .container .left{
+    height: 100vh;
+
   }
 
   header{
-    left:15%;
+    position:absolute;
+    top:0;
+    left: 4.4rem;
   }
 
   main{
     max-width: 100%;
-    width: 580px;
+    width: 635px;
     align-items: start;
-
-
-
+    position:absolute;
+    top: 50%;
+    left: 2rem;
+    transform:translateY(-50%);
+    background-color: var(--bgColor);
   }
 
   main .header h1,h2{
@@ -289,7 +291,7 @@ main .body p{
     width: 25%;
     position: absolute;
     bottom: 9rem;
-    right: 21.5rem;
+    right: 20%;
   }
 
 
@@ -301,16 +303,13 @@ main .body p{
 
   .container .right{
     background: url(./assets/desktop/image-host.jpg)no-repeat top right;
-    background-size: cover;
-    left: 0%;
-    transform:translate(50%,-50%)
-
+    top: 50%;
   }
   .container .right::after{
     background:url(./assets/desktop/bg-pattern-dots.svg) bottom right no-repeat;
     background-size: auto;
     z-index: 9;
-    top: 10%;
-    transform:translateX(0);
+    top: 80%;
+    transform:translateX(-20%);
   }
 }
