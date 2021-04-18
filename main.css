@@ -82,7 +82,7 @@ body{
 }
 
 header{
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 main{
@@ -97,7 +97,7 @@ main{
 
 main .header{
 
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 main .header h1, h2 {
   font-size:2.6rem;
@@ -112,7 +112,7 @@ main .header h2{
 }
 
 main .body{
-  margin-bottom:3rem;
+  margin-bottom:2rem;
 }
 main .body p{
   font-size: 1.5rem;
@@ -123,7 +123,7 @@ main .body p{
 
 .icons{
   padding: 2rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -141,9 +141,9 @@ main .body p{
 }
 
 .form{
-  width: 427px;
+  width: 327px;
   max-width:100%;
-  padding: 2rem 3rem;
+  padding: 2rem ;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -284,6 +284,7 @@ main .body p{
   }
 
   .form{
+    width: 427px;
     flex-direction: row;
   }
 
@@ -291,7 +292,7 @@ main .body p{
     width: 25%;
     position: absolute;
     bottom: 9rem;
-    right: 20%;
+    right: 30%;
   }
 
 
@@ -304,12 +305,15 @@ main .body p{
   .container .right{
     background: url(./assets/desktop/image-host.jpg)no-repeat top right;
     top: 50%;
+    left: 60%;
   }
   .container .right::after{
+    height: 15vh;
     background:url(./assets/desktop/bg-pattern-dots.svg) bottom right no-repeat;
     background-size: auto;
     z-index: 9;
     top: 80%;
-    transform:translateX(-20%);
+    left:50%;
+    transform: translate(-50%, -50%)
   }
 }
